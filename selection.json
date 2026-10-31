@@ -1,0 +1,126 @@
+{
+ "photos": [
+  {
+   "file": "assets/photo-01.jpg",
+   "title": "ハロウィンのフォトブース",
+   "date": "2026-10-25",
+   "instagram_url": "https://www.instagram.com/p/De6jtbrDgCx/"
+  },
+  {
+   "file": "assets/photo-02.jpg",
+   "title": "那須ハイランドパークのオフ会",
+   "date": "2026-10-23",
+   "instagram_url": "https://www.instagram.com/p/De3JfR5S4Ec/"
+  },
+  {
+   "file": "assets/photo-03.jpg",
+   "title": "ラベンダーのフォトブース・那須",
+   "date": "2026-10-01",
+   "instagram_url": "https://www.instagram.com/p/Dd86Nmjkj0l/"
+  },
+  {
+   "file": "assets/photo-07.jpg",
+   "title": "ひまわりと夏祭り・那須",
+   "date": "2026-08-10",
+   "instagram_url": "https://www.instagram.com/p/Db3J6OIksdn/"
+  },
+  {
+   "file": "assets/photo-08.jpg",
+   "title": "ネモフィラの丘・ひたち海浜公園",
+   "date": "2026-06-22",
+   "instagram_url": "https://www.instagram.com/p/DZ4v9WukkKY/"
+  },
+  {
+   "file": "assets/photo-09.jpg",
+   "title": "菜の花畑・ソレイユの丘",
+   "date": "2026-04-13",
+   "instagram_url": "https://www.instagram.com/p/DXFhAIWEzs-/"
+  },
+  {
+   "file": "assets/photo-10.jpg",
+   "title": "メリークリスマス",
+   "date": "2025-12-24",
+   "instagram_url": "https://www.instagram.com/p/DSpX9W8EvtQ/"
+  },
+  {
+   "file": "assets/photo-11.jpg",
+   "title": "ビションフェス クリスマスパーティー",
+   "date": "2025-12-11",
+   "instagram_url": "https://www.instagram.com/p/DSH7VzlEjo8/"
+  },
+  {
+   "file": "assets/photo-13.jpg",
+   "title": "京都の紅葉さんぽ",
+   "date": "2025-11-30",
+   "instagram_url": "https://www.instagram.com/p/DRriaaZksu_/"
+  },
+  {
+   "file": "assets/photo-18.jpg",
+   "title": "秋のポートレート",
+   "date": "2025-09-26",
+   "instagram_url": "https://www.instagram.com/p/DPELaYHEs4c/"
+  },
+  {
+   "file": "assets/photo-19.jpg",
+   "title": "お誕生日の記念写真",
+   "date": "2025-07-03",
+   "instagram_url": "https://www.instagram.com/p/DLpKcMcTd-V/"
+  },
+  {
+   "file": "assets/photo-21.jpg",
+   "title": "カフェでランチ",
+   "date": "2025-05-13",
+   "instagram_url": "https://www.instagram.com/p/DJmVCEhTr2y/"
+  },
+  {
+   "file": "assets/photo-26.jpg",
+   "title": "ピンクのリンクコーデ・ビションフェス",
+   "date": "2025-05-07",
+   "instagram_url": "https://www.instagram.com/p/DJXKGvEzf8x/"
+  },
+  {
+   "file": "assets/photo-28.jpg",
+   "title": "チューリップのお庭・箱根",
+   "date": "2025-04-16",
+   "instagram_url": "https://www.instagram.com/p/DIglGFcye8P/"
+  }
+ ],
+ "videos": [
+  {
+   "file": "assets/video-31.jpg",
+   "title": "海を眺める夕暮れ",
+   "date": "2026-01-04",
+   "instagram_url": "https://www.instagram.com/reel/DTFjy45gAc2/"
+  },
+  {
+   "file": "assets/video-42.jpg",
+   "title": "ドッグランで元気にラン",
+   "date": "2025-08-18",
+   "instagram_url": "https://www.instagram.com/reel/DNft5EFzIoA/"
+  },
+  {
+   "file": "assets/video-43.jpg",
+   "title": "ブーケになったメルシー",
+   "date": "2025-08-16",
+   "instagram_url": "https://www.instagram.com/reel/DNakYaizdS6/"
+  },
+  {
+   "file": "assets/video-46.jpg",
+   "title": "逗子マリーナさんぽ",
+   "date": "2025-08-11",
+   "instagram_url": "https://www.instagram.com/reel/DNNqB9AT70m/"
+  },
+  {
+   "file": "assets/video-48.jpg",
+   "title": "ゴールデンアワーのおさんぽ",
+   "date": "2025-07-31",
+   "instagram_url": "https://www.instagram.com/reel/DMxh-iLzM0t/"
+  },
+  {
+   "file": "assets/video-54.jpg",
+   "title": "鎌倉の紫陽花さんぽ",
+   "date": "2025-06-22",
+   "instagram_url": "https://www.instagram.com/reel/DLM9bgnzPUs/"
+  }
+ ]
+}
