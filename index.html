@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#F5F1E8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Pinyon+Script&family=Zen+Maru+Gothic:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script>document.documentElement.classList.add("js");</script>
 </head>
@@ -32,19 +32,22 @@
 
   <main id="main">
     <!-- 1. Hero -->
-    <section class="hero" id="top" aria-labelledby="hero-title">
+    <section class="hero stripes" id="top" aria-labelledby="hero-title">
+      <div class="hero__card frame">
       <figure class="hero__media">
         <img src="assets/hero-merci-closeup.jpg" width="1179" height="786"
              alt="ピンクのリボンをつけて、こちらを見上げるメルシーの顔のアップ"
              fetchpriority="high" decoding="async">
       </figure>
       <div class="hero__text">
-        <p class="eyebrow">Bichon Frise&nbsp;/&nbsp;Shonan &amp; Tokyo</p>
+        <p class="eyebrow"><span class="phrase">Bichon Frise</span> / <span class="phrase">Shonan &amp; Tokyo</span></p>
         <h1 class="hero__title" id="hero-title">Merci</h1>
         <p class="hero__lead">
           <span class="phrase">元保護犬の</span><span class="phrase">ビションフリーゼ、</span><span class="phrase">メルシーの毎日。</span><br>
           <span class="phrase">湘南と東京の</span><span class="phrase">おでかけを</span><span class="phrase">発信しています。</span>
         </p>
+        <a class="pill-button" href="#album">See Album</a>
+      </div>
       </div>
     </section>
 
@@ -52,8 +55,8 @@
     <section class="section about" id="about" aria-labelledby="about-title">
       <div class="container about__grid">
         <div class="about__profile reveal">
-          <img class="about__photo" src="assets/profile.jpg" width="150" height="150"
-               alt="ピンクの洋服を着て舌をぺろっと出すメルシー" loading="lazy" decoding="async">
+          <span class="about__photo-frame"><img class="about__photo" src="assets/profile.jpg" width="150" height="150"
+               alt="ピンクの洋服を着て舌をぺろっと出すメルシー" loading="lazy" decoding="async"></span>
           <dl class="profile-list">
             <div><dt>Name</dt><dd>メルシー</dd></div>
             <div><dt>Breed</dt><dd>ビションフリーゼ</dd></div>
@@ -363,12 +366,18 @@
             <p>ドッグランを元気に走り、カフェやイベントへのお出かけを楽しんでいます。</p>
           </li>
         </ol>
+        <figure class="story__illust reveal">
+          <img src="assets/illust-walk.webp" width="1100" height="829"
+               alt="ボーダーのシャツの女性とメルシーが、エッフェル塔とピンクの木のそばをお散歩しているイラスト"
+               loading="lazy" decoding="async">
+          <figcaption>Walking together</figcaption>
+        </figure>
       </div>
     </section>
 
     <!-- 6. Links -->
-    <section class="section links" id="links" aria-labelledby="links-title">
-      <div class="container container--narrow">
+    <section class="section links pinstripe" id="links" aria-labelledby="links-title">
+      <div class="container container--narrow links__box frame">
         <header class="section-head reveal">
           <p class="eyebrow">Links</p>
           <h2 class="section-title" id="links-title">

@@ -44,10 +44,12 @@ python3 -m http.server 8000
 Album / Movies の各カードは、selection.json の `instagram_url`（その写真・リールの**個別投稿**）にリンク（新しいタブで開く）。
 ※ ブリーフでは「プロフィールに統一」だったが、オーナーの指示で個別投稿リンクに変更。Links セクションの Instagram ボタンはプロフィールのまま。
 
-### デザイン
-- 色：背景 #F5F1E8／ピンク #DBC8C7／セージ #C3C6BA／見出し #B97E89／小ラベル #C08A94／本文 #6E565E
-- フォント：英字 Rubik、日本語 M PLUS Rounded 1c
-- 太さ：Merci 600／英字見出し 600／日本語見出し・リード 500／本文 400
+### デザイン（ストライプ＆フレーム版）
+- カラーパレット（R's Story Pattern 1）：Buttermilk #F5F1E8／Blush #E8D8D5／Pale Sage #C4CBBD／Light Tan #A48A72／Warm Brown #5A4A3A
+- フォント：筆記体 Pinyon Script（英字見出し・ロゴ）、Cormorant Garamond（小さな英字ラベル）、Zen Maru Gothic（日本語）
+- 飾り：ヒーローとリンク周りにストライプ、角が内側にカーブした二重線フレーム（`assets/frame-cream.svg` を border-image で使用）
+- セクションの背景：Album は Blush、Movies は Pale Sage
+- イラスト：`assets/illust-walk.webp`（背景透過）を Story の最後に「Walking together」として配置
 - 日本語の見出し・カードタイトルは文節単位（`.phrase`）でのみ改行し、2文字だけ次の行に残る改行を防止
 
 ### 技術
