@@ -93,6 +93,12 @@
    "instagram_url": "https://www.instagram.com/reel/DTFjy45gAc2/"
   },
   {
+   "file": "assets/reel-monyeo.jpg",
+   "title": "鎌倉・モニョさんでランチ",
+   "date": "2025-10-11",
+   "instagram_url": "https://www.instagram.com/reel/DPtcvkokmOS/"
+  },
+  {
    "file": "assets/video-42.jpg",
    "title": "ドッグランで元気にラン",
    "date": "2025-08-18",
@@ -121,6 +127,12 @@
    "title": "鎌倉の紫陽花さんぽ",
    "date": "2025-06-22",
    "instagram_url": "https://www.instagram.com/reel/DLM9bgnzPUs/"
+  },
+  {
+   "file": "assets/reel-totonoe.jpg",
+   "title": "鎌倉トトのエで薬膳ランチ",
+   "date": "2025-06-01",
+   "instagram_url": "https://www.instagram.com/reel/DKR_KWiTz9P/"
   }
  ]
 }
