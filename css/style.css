@@ -12,7 +12,7 @@
 
   --f-script: "Pinyon Script", "Cormorant Garamond", serif;
   --f-serif: "Cormorant Garamond", "Zen Maru Gothic", serif;
-  --f-merci: "Jost", "Zen Maru Gothic", system-ui, sans-serif; /* 「Merci」用の角ゴシック（標準幅） */
+  --f-merci: "Outfit", "Zen Maru Gothic", system-ui, sans-serif; /* 「Merci」用の角ゴシック（標準幅・Mの山がとがらない） */
   --f-ja: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Hiragino Sans", system-ui, sans-serif;
 
   --container: 1120px;

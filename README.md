@@ -38,7 +38,7 @@ python3 -m http.server 8000
 3. **Album** — 14枚、縦型4:5カード。タイトルと日付は写真の下。顔が切れないよう写真ごとに `object-position` を調整（例：photo-08 は下寄り、photo-18 は上寄り）。
 4. **Movies** — リール6本のサムネイル（4:5）。動画ファイルはないため右上隅に小さな再生マークのみ（顔には重ねない）。
 5. **Story** — 縦の年表4段階（2024.10 家族に迎えた頃 → お散歩で固まっていた頃 → 少しずつ歩けるように → Now）。日付が分かっているのは2024年10月のみなので、他は創作せず Step 表記。
-4.5 **Favorite Places** — メルシーのお気に入りの場所5か所（モニョさん／ナスファームビレッジ／逗子マリーナ／ととのえ／ニコライ バーグマン 箱根 ガーデンズ）。写真があるものは関連する Instagram 投稿にリンク。モニョさん・ととのえは写真が届くまでストライプの仮画像。
+4.5 **Favorite Places** — メルシーのお気に入りの場所5か所（モニョさん／ナスファームビレッジ／逗子マリーナ／ととのえ／ニコライ バーグマン 箱根 ガーデンズ）。写真があるものは関連する Instagram 投稿にリンク。モニョさん・ととのえはリールにリンクし、写真が届くまでストライプの仮画像。
 6. **Links** — Instagram / LINEスタンプ / BASE の3ボタン（新しいタブで開く）。
 
 ### リンク仕様
@@ -47,7 +47,7 @@ Album / Movies の各カードは、selection.json の `instagram_url`（その�
 
 ### デザイン（ストライプ＆フレーム版）
 - 色：Buttermilk #F5F1E8／Blush #E8D8D5／Light Tan #A48A72／Warm Brown #5A4A3A（＋淡いタン #EDE3D7）。**グリーンは使わない**
-- フォント：「Merci」は角ゴシック Jost（標準幅）、英字見出しは筆記体 Pinyon Script（About の「Hello, I'm Merci」だけ Cormorant Garamond）、小さな英字ラベルは Cormorant Garamond、日本語は Zen Maru Gothic
+- フォント：「Merci」は角ゴシック Outfit（標準幅・Mの山がとがらない）、英字見出しは筆記体 Pinyon Script（About の「Hello, I'm Merci」だけ Cormorant Garamond）、小さな英字ラベルは Cormorant Garamond、日本語は Zen Maru Gothic
 - ストライプ：太いブラッシュ・細いブラッシュ・細いライトタンを、バターミルクの上に並べた縦ストライプ（ヒーロー）。リンク周りは細いピンストライプ
 - フレーム：角が内側にカーブした二重線のフレーム（`assets/frame-cream.svg` を border-image で使用）。写真の角も `.concave` で同じ形に抜いている
 - セクションの背景：Album は Blush、Movies は淡いタン、Places は Blush
