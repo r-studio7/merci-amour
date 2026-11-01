@@ -12,7 +12,7 @@
 
   --f-script: "Pinyon Script", "Cormorant Garamond", serif;
   --f-serif: "Cormorant Garamond", "Zen Maru Gothic", serif;
-  --f-cute: "Fredoka", "Zen Maru Gothic", system-ui, sans-serif; /* 「Merci」用のかわいいゴシック */
+  --f-merci: "Jost", "Zen Maru Gothic", system-ui, sans-serif; /* 「Merci」用の角ゴシック（標準幅） */
   --f-ja: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Hiragino Sans", system-ui, sans-serif;
 
   --container: 1120px;
@@ -135,7 +135,7 @@ h1, h2, h3, p, figure, dl, dd { margin: 0; }
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
 }
 .site-logo {
-  font-family: var(--f-cute); font-weight: 500; font-size: 24px; line-height: 1; letter-spacing: 0.02em;
+  font-family: var(--f-merci); font-weight: 500; font-size: 24px; line-height: 1; letter-spacing: 0.02em;
   color: var(--c-tan); text-decoration: none;
 }
 .site-nav ul { display: flex; gap: clamp(12px, 3vw, 30px); }
@@ -166,11 +166,11 @@ h1, h2, h3, p, figure, dl, dd { margin: 0; }
 }
 .hero__text { padding: 28px 12px 18px; text-align: center; }
 .hero__title {
-  font-family: var(--f-cute);
+  font-family: var(--f-merci);
   font-weight: 500;
-  font-size: clamp(68px, 18vw, 120px);
+  font-size: clamp(64px, 17vw, 112px);
   line-height: 1.05;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
   color: var(--c-tan);
   margin: 4px 0 14px;
 }
@@ -197,6 +197,11 @@ h1, h2, h3, p, figure, dl, dd { margin: 0; }
   font-family: var(--f-script); font-weight: 400;
   font-size: clamp(40px, 9vw, 60px); line-height: 1.2;
   color: var(--c-tan);
+}
+/* About の「Hello, I'm Merci」は筆記体ではなく Cormorant Garamond */
+.section-title--serif .en {
+  font-family: var(--f-serif); font-weight: 500;
+  font-size: clamp(32px, 6.5vw, 46px); line-height: 1.2; letter-spacing: 0.04em;
 }
 .section-title .ja {
   font-family: var(--f-ja); font-weight: 500;
@@ -303,6 +308,27 @@ h1, h2, h3, p, figure, dl, dd { margin: 0; }
   border-color: transparent transparent transparent var(--c-tan);
 }
 
+/* ---------- 4.5 Favorite Places ---------- */
+.places { background: var(--c-blush); }
+.card-grid--places { gap: 18px 12px; }
+@media (min-width: 1080px) { .card-grid--places { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px 18px; } }
+.place__media--empty {
+  display: flex; align-items: center; justify-content: center;
+  background: var(--stripes);
+}
+.place__placeholder {
+  padding: 4px 14px;
+  background: var(--c-paper);
+  border: 1px solid var(--c-tan);
+  border-radius: 999px;
+  font-family: var(--f-script); font-size: clamp(20px, 5vw, 26px); line-height: 1.3; color: var(--c-tan);
+}
+.place__area {
+  margin-top: 2px;
+  font-size: 11.5px; letter-spacing: 0.2em; color: #8A715B;
+}
+.place__area::before, .place__area::after { content: " — "; color: var(--c-tan); }
+
 /* ---------- 5. Story ---------- */
 .timeline { position: relative; padding-left: 32px; }
 .timeline::before {
@@ -362,7 +388,61 @@ h1, h2, h3, p, figure, dl, dd { margin: 0; }
   font-family: var(--f-serif); font-weight: 600; font-size: 13px; letter-spacing: 0.16em; color: var(--c-tan);
 }
 
-/* ---------- スクロール時のふわっと表示（JS有効時のみ） ---------- */
-.js .reveal { opacity: 0; transform: translateY(14px); transition: opacity .8s ease, transform .8s ease; }
-.js .reveal.is-visible { opacity: 1; transform: none; }
+/* ==========================================================
+   アニメーション（動きを減らす設定の端末では止める）
+   ========================================================== */
+@media (prefers-reduced-motion: no-preference) {
+
+  /* ヒーロー：開いたときにふわっと登場 */
+  @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+  @keyframes zoom-in { from { transform: scale(1.08); } to { transform: scale(1); } }
+  @keyframes title-in { from { opacity: 0; letter-spacing: 0.3em; } to { opacity: 1; letter-spacing: 0.05em; } }
+  @keyframes stripes-drift { from { background-position: 0 0; } to { background-position: 700px 0; } }
+
+  .hero.stripes { animation: stripes-drift 60s linear infinite; }
+  .hero__card { animation: rise 1s cubic-bezier(.2,.7,.2,1) both; }
+  .hero__media { overflow: hidden; }
+  .hero__media img { animation: zoom-in 2.2s cubic-bezier(.2,.7,.2,1) both; }
+  .hero__text .eyebrow { animation: rise .9s .35s ease both; }
+  .hero__title { animation: title-in 1.4s .45s cubic-bezier(.2,.7,.2,1) both; }
+  .hero__lead { animation: rise .9s .75s ease both; }
+  .hero__text .pill-button { animation: rise .9s .95s ease both; }
+
+  /* スクロールでふわっと表示（カードは順番に少しずつ遅れて） */
+  .js .reveal {
+    opacity: 0; transform: translateY(22px);
+    transition: opacity .9s ease var(--d, 0s), transform .9s cubic-bezier(.2,.7,.2,1) var(--d, 0s);
+  }
+  .js .card.reveal { transform: translateY(26px) scale(.97); }
+  .js .reveal.is-visible { opacity: 1; transform: none; }
+
+  /* 見出しの筆記体：少し横からすべり込む */
+  .js .section-head.reveal .en { display: inline-block; opacity: 0; transform: translateX(-14px); transition: opacity 1s ease .2s, transform 1s ease .2s; }
+  .js .section-head.reveal.is-visible .en { opacity: 1; transform: none; }
+
+  /* 年表：点線が上から伸びて、項目は左からすべり込む */
+  .js .timeline::before { transform: scaleY(0); transform-origin: top; transition: transform 1.8s ease; }
+  .js .timeline.is-visible::before { transform: scaleY(1); }
+  .js .timeline__item.reveal { transform: translateX(-16px); }
+  .js .timeline__item.reveal.is-visible { transform: none; }
+  .js .timeline__item.reveal.is-visible::before { animation: dot-pop .6s .2s ease both; }
+  @keyframes dot-pop { 0% { transform: scale(0); } 70% { transform: scale(1.25); } 100% { transform: scale(1); } }
+
+  /* イラスト：左から歩いてきて、そのあとゆらゆら */
+  .js .story__illust.reveal { transform: translateX(-60px); transition-duration: 1.6s; }
+  .js .story__illust.reveal.is-visible { transform: none; }
+  @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+  .story__illust.is-visible img { animation: bob 3.2s 1.6s ease-in-out infinite; }
+
+  /* ホバー */
+  .card__link:hover { box-shadow: 0 10px 24px -14px rgba(90, 74, 58, 0.45); }
+  @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.15); } }
+  .card__link:hover .card__play { animation: pulse 1.2s ease-in-out infinite; }
+  .pill-button, .link-button { transition: background-color .25s, transform .25s, box-shadow .25s; }
+  .pill-button:hover, .link-button:hover { transform: translateY(-2px); box-shadow: 0 8px 18px -12px rgba(90, 74, 58, 0.5); }
+  .site-logo { transition: letter-spacing .4s ease; }
+  .site-logo:hover { letter-spacing: 0.12em; }
+}
+
+/* 動きを減らす設定 or JS無効のときは最初から表示 */
 @media (prefers-reduced-motion: reduce) { .js .reveal { opacity: 1; transform: none; transition: none; } }

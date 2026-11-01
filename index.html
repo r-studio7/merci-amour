@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#F5F1E8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Fredoka:wght@500&family=Pinyon+Script&family=Zen+Maru+Gothic:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@500&family=Pinyon+Script&family=Zen+Maru+Gothic:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script>document.documentElement.classList.add("js");</script>
 </head>
@@ -23,6 +23,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#album">Album</a></li>
           <li><a href="#movies">Movies</a></li>
+          <li><a href="#places">Places</a></li>
           <li><a href="#story">Story</a></li>
           <li><a href="#links">Links</a></li>
         </ul>
@@ -67,7 +68,7 @@
         </div>
         <div class="about__body reveal">
           <p class="eyebrow">About</p>
-          <h2 class="section-title" id="about-title">
+          <h2 class="section-title section-title--serif" id="about-title">
             <span class="en">Hello, I'm Merci</span>
             <span class="ja"><span class="phrase">お散歩が苦手だった子が、</span><span class="phrase">ドッグランを走るまで</span></span>
           </h2>
@@ -327,6 +328,76 @@
               <div class="card__body">
                 <p class="card__title"><span class="phrase">鎌倉の</span><span class="phrase">紫陽花さんぽ</span></p>
                 <p class="card__date"><time datetime="2025-06-22">2025.06.22</time></p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4.5 Favorite Places -->
+    <section class="section places" id="places" aria-labelledby="places-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Favorite Places</p>
+          <h2 class="section-title" id="places-title">
+            <span class="en">Merci's Favorites</span>
+            <span class="ja"><span class="phrase">メルシーの</span><span class="phrase">お気に入りの場所</span></span>
+          </h2>
+        </header>
+        <ul class="card-grid card-grid--places">
+          <li class="card reveal">
+            <div class="card__link place">
+              <div class="card__media place__media place__media--empty concave" aria-hidden="true">
+                <span class="place__placeholder">Kamakura</span>
+              </div>
+              <div class="card__body">
+                <p class="card__title place__name">モニョさん</p>
+                <p class="place__area">鎌倉</p>
+              </div>
+            </div>
+          </li>
+          <li class="card reveal">
+            <a class="card__link place" href="https://www.instagram.com/p/Db3J6OIksdn/" target="_blank" rel="noopener noreferrer" aria-label="ナスファームビレッジ ― Instagramでこの投稿を見る">
+              <div class="card__media place__media concave">
+                <img src="assets/photo-07.jpg" width="900" height="1188" alt="ナスファームビレッジでドリンクと一緒に写るメルシー" loading="lazy" decoding="async" style="object-position: 50% 35%;">
+              </div>
+              <div class="card__body">
+                <p class="card__title place__name">ナスファームビレッジ</p>
+                <p class="place__area">那須</p>
+              </div>
+            </a>
+          </li>
+          <li class="card reveal">
+            <a class="card__link place" href="https://www.instagram.com/reel/DNNqB9AT70m/" target="_blank" rel="noopener noreferrer" aria-label="逗子マリーナ ― Instagramでこの投稿を見る">
+              <div class="card__media place__media concave">
+                <img src="assets/video-46.jpg" width="720" height="1280" alt="逗子マリーナのヤシの木の道を歩くメルシー" loading="lazy" decoding="async" style="object-position: 50% 58%;">
+              </div>
+              <div class="card__body">
+                <p class="card__title place__name">逗子マリーナ</p>
+                <p class="place__area">逗子</p>
+              </div>
+            </a>
+          </li>
+          <li class="card reveal">
+            <div class="card__link place">
+              <div class="card__media place__media place__media--empty concave" aria-hidden="true">
+                <span class="place__placeholder">Favorite</span>
+              </div>
+              <div class="card__body">
+                <p class="card__title place__name">ととのえ</p>
+                
+              </div>
+            </div>
+          </li>
+          <li class="card reveal">
+            <a class="card__link place" href="https://www.instagram.com/p/DIglGFcye8P/" target="_blank" rel="noopener noreferrer" aria-label="ニコライ バーグマン 箱根 ガーデンズ ― Instagramでこの投稿を見る">
+              <div class="card__media place__media concave">
+                <img src="assets/photo-28.jpg" width="900" height="1124" alt="ニコライ バーグマン 箱根 ガーデンズのベンチに座るメルシー" loading="lazy" decoding="async" style="object-position: 50% 60%;">
+              </div>
+              <div class="card__body">
+                <p class="card__title place__name">ニコライ バーグマン 箱根 ガーデンズ</p>
+                <p class="place__area">箱根</p>
               </div>
             </a>
           </li>
