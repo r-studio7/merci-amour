@@ -45,10 +45,11 @@ Album / Movies の各カードは、selection.json の `instagram_url`（その�
 ※ ブリーフでは「プロフィールに統一」だったが、オーナーの指示で個別投稿リンクに変更。Links セクションの Instagram ボタンはプロフィールのまま。
 
 ### デザイン（ストライプ＆フレーム版）
-- カラーパレット（R's Story Pattern 1）：Buttermilk #F5F1E8／Blush #E8D8D5／Pale Sage #C4CBBD／Light Tan #A48A72／Warm Brown #5A4A3A
-- フォント：筆記体 Pinyon Script（英字見出し・ロゴ）、Cormorant Garamond（小さな英字ラベル）、Zen Maru Gothic（日本語）
-- 飾り：ヒーローとリンク周りにストライプ、角が内側にカーブした二重線フレーム（`assets/frame-cream.svg` を border-image で使用）
-- セクションの背景：Album は Blush、Movies は Pale Sage
+- 色：Buttermilk #F5F1E8／Blush #E8D8D5／Light Tan #A48A72／Warm Brown #5A4A3A（＋淡いタン #EDE3D7）。**グリーンは使わない**
+- フォント：「Merci」はかわいいゴシック Fredoka、英字見出しは筆記体 Pinyon Script、小さな英字ラベルは Cormorant Garamond、日本語は Zen Maru Gothic
+- ストライプ：太いブラッシュ・細いブラッシュ・細いライトタンを、バターミルクの上に並べた縦ストライプ（ヒーロー）。リンク周りは細いピンストライプ
+- フレーム：角が内側にカーブした二重線のフレーム（`assets/frame-cream.svg` を border-image で使用）。写真の角も `.concave` で同じ形に抜いている
+- セクションの背景：Album は Blush、Movies は淡いタン
 - イラスト：`assets/illust-walk.webp`（背景透過）を Story の最後に「Walking together」として配置
 - 日本語の見出し・カードタイトルは文節単位（`.phrase`）でのみ改行し、2文字だけ次の行に残る改行を防止
 

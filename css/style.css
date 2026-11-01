@@ -1,17 +1,18 @@
 /* ==========================================================
    Merci — ストライプ＆フレームのクラシックデザイン
-   カラーパレット：R's Story Pattern 1（Blush + Pale Sage）
+   カラーパレット：Buttermilk / Blush / Light Tan / Warm Brown（グリーンは使わない）
    ========================================================== */
 :root {
   --c-bg: #F5F1E8;        /* Buttermilk 背景 */
   --c-blush: #E8D8D5;     /* Blush */
-  --c-sage: #C4CBBD;      /* Pale Sage */
+  --c-tan-tint: #EDE3D7;  /* Light Tan をバターミルクに溶かした淡い色 */
   --c-tan: #A48A72;       /* Light Tan：線・飾り・筆記体見出し */
   --c-brown: #5A4A3A;     /* Warm Brown：本文・ラベル */
   --c-paper: #FBF8F2;     /* フレームの中の紙色 */
 
   --f-script: "Pinyon Script", "Cormorant Garamond", serif;
   --f-serif: "Cormorant Garamond", "Zen Maru Gothic", serif;
+  --f-cute: "Fredoka", "Zen Maru Gothic", system-ui, sans-serif; /* 「Merci」用のかわいいゴシック */
   --f-ja: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Hiragino Sans", system-ui, sans-serif;
 
   --container: 1120px;
@@ -19,10 +20,14 @@
   --section-space: clamp(80px, 12vw, 136px);
   --header-h: 60px;
 
-  /* 縦ストライプ（セージ × ブラッシュ、間に細いバターミルク） */
+  /* 縦ストライプ：太いブラッシュ・細いブラッシュ・細いライトタンをバターミルクの上に */
   --stripes: repeating-linear-gradient(90deg,
-      var(--c-sage) 0 22px, var(--c-bg) 22px 26px,
-      var(--c-blush) 26px 48px, var(--c-bg) 48px 52px);
+      var(--c-blush) 0 30px,
+      var(--c-bg) 30px 36px,
+      var(--c-tan) 36px 38px,
+      var(--c-bg) 38px 44px,
+      var(--c-blush) 44px 52px,
+      var(--c-bg) 52px 70px);
   /* 細いピンストライプ */
   --pinstripe: repeating-linear-gradient(90deg,
       var(--c-bg) 0 14px, rgba(164, 138, 114, 0.28) 14px 15.5px);
@@ -75,8 +80,24 @@ h1, h2, h3, p, figure, dl, dd { margin: 0; }
 /* 角が内側にカーブした二重線のフレーム（SVGを9分割で伸ばす） */
 .frame {
   border-style: solid;
-  border-width: 24px;
-  border-image: url("../assets/frame-cream.svg") 24 fill / 24px stretch;
+  border-width: 30px;
+  border-image: url("../assets/frame-cream.svg") 30 fill / 42px stretch;
+}
+
+/* 写真の角もフレームに合わせて内側にカーブさせる */
+.concave {
+  --r: 10px;
+  --m: #0000 var(--r), #000 calc(var(--r) + 0.5px);
+  -webkit-mask:
+    radial-gradient(circle at 0 0, var(--m)) top left / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 0, var(--m)) top right / 51% 51% no-repeat,
+    radial-gradient(circle at 0 100%, var(--m)) bottom left / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 100%, var(--m)) bottom right / 51% 51% no-repeat;
+          mask:
+    radial-gradient(circle at 0 0, var(--m)) top left / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 0, var(--m)) top right / 51% 51% no-repeat,
+    radial-gradient(circle at 0 100%, var(--m)) bottom left / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 100%, var(--m)) bottom right / 51% 51% no-repeat;
 }
 
 .eyebrow {
@@ -98,7 +119,7 @@ h1, h2, h3, p, figure, dl, dd { margin: 0; }
   text-transform: uppercase; text-decoration: none; color: var(--c-brown);
   transition: background-color .25s;
 }
-.pill-button:hover { background: var(--c-sage); }
+.pill-button:hover { background: var(--c-tan-tint); }
 
 /* ---------- Header ---------- */
 .site-header {
@@ -114,7 +135,7 @@ h1, h2, h3, p, figure, dl, dd { margin: 0; }
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
 }
 .site-logo {
-  font-family: var(--f-script); font-size: 30px; line-height: 1;
+  font-family: var(--f-cute); font-weight: 500; font-size: 24px; line-height: 1; letter-spacing: 0.02em;
   color: var(--c-tan); text-decoration: none;
 }
 .site-nav ul { display: flex; gap: clamp(12px, 3vw, 30px); }
@@ -141,15 +162,15 @@ h1, h2, h3, p, figure, dl, dd { margin: 0; }
 .hero__media img {
   width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
   object-position: 36% 42%; /* メルシーの顔を中心に */
-  border-radius: 4px;
-  box-shadow: 0 0 0 1px rgba(164, 138, 114, 0.45);
+  --r: 14px;
 }
 .hero__text { padding: 28px 12px 18px; text-align: center; }
 .hero__title {
-  font-family: var(--f-script);
-  font-weight: 400;
-  font-size: clamp(80px, 22vw, 150px);
+  font-family: var(--f-cute);
+  font-weight: 500;
+  font-size: clamp(68px, 18vw, 120px);
   line-height: 1.05;
+  letter-spacing: 0.02em;
   color: var(--c-tan);
   margin: 4px 0 14px;
 }
@@ -190,7 +211,7 @@ h1, h2, h3, p, figure, dl, dd { margin: 0; }
   display: block; padding: 10px;
   border: 1px solid var(--c-tan); border-radius: 50%;
   background: var(--c-paper);
-  box-shadow: 0 0 0 6px var(--c-bg), 0 0 0 7px var(--c-sage);
+  box-shadow: 0 0 0 6px var(--c-bg), 0 0 0 7px var(--c-blush);
 }
 .about__photo { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; }
 .profile-list { width: 100%; max-width: 340px; border-top: 1px solid var(--c-tan); }
@@ -216,7 +237,7 @@ h1, h2, h3, p, figure, dl, dd { margin: 0; }
 
 /* ---------- 3 & 4. Album / Movies カード（フレーム付き） ---------- */
 .album { background: var(--c-blush); }
-.movies { background: var(--c-sage); }
+.movies { background: var(--c-tan-tint); }
 
 .card-grid {
   display: grid;
@@ -228,19 +249,18 @@ h1, h2, h3, p, figure, dl, dd { margin: 0; }
 
 .card__link {
   display: block; height: 100%; text-decoration: none; color: inherit;
-  border-style: solid; border-width: 14px;
-  border-image: url("../assets/frame-cream.svg") 24 fill / 14px stretch;
+  border-style: solid; border-width: 16px;
+  border-image: url("../assets/frame-cream.svg") 30 fill / 32px stretch;
   transition: transform .35s ease;
 }
 @media (min-width: 768px) {
-  .card__link { border-width: 18px; border-image-width: 18px; }
+  .card__link { border-width: 16px; border-image-width: 32px; }
 }
 .card__link:hover { transform: translateY(-3px); }
 .card__media {
   position: relative;
   aspect-ratio: 4 / 5;           /* 縦型 4:5 */
   overflow: hidden;
-  border-radius: 3px;
   background: var(--c-blush);
 }
 .card__media img {
@@ -265,7 +285,7 @@ h1, h2, h3, p, figure, dl, dd { margin: 0; }
   font-family: var(--f-serif); font-weight: 600; font-size: 12px; letter-spacing: 0.16em; color: #8A715B;
 }
 @media (max-width: 767px) {
-  .card__link { border-width: 12px; border-image-width: 12px; }
+  .card__link { border-width: 12px; border-image-width: 26px; }
   .card__title { font-size: 12px; letter-spacing: 0; }
 }
 @media (min-width: 768px) { .card__title { font-size: 14px; } }
@@ -296,7 +316,7 @@ h1, h2, h3, p, figure, dl, dd { margin: 0; }
   width: 15px; height: 15px; border-radius: 50%;
   background: var(--c-blush); border: 1px solid var(--c-tan);
 }
-.timeline__item--now::before { background: var(--c-sage); }
+.timeline__item--now::before { background: var(--c-tan); }
 .timeline__when {
   font-family: var(--f-serif); font-weight: 600; font-size: 13px; letter-spacing: 0.24em;
   text-transform: uppercase; color: var(--c-tan);
