@@ -1,4 +1,4 @@
-/* Merci — 小さな動きだけのシンプルなスクリプト（ビルド不要） */
+/* Merci — アニメーション用の小さなスクリプト（ビルド不要） */
 (function () {
   "use strict";
   var root = document.documentElement;
@@ -8,8 +8,18 @@
   var year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
 
+  // カードを順番に少しずつ遅れて表示（同じ段ごとに 0.08 秒ずつ）
+  document.querySelectorAll(".card-grid").forEach(function (grid) {
+    grid.querySelectorAll(".card.reveal").forEach(function (card, i) {
+      card.style.setProperty("--d", ((i % 5) * 0.08).toFixed(2) + "s");
+    });
+  });
+  document.querySelectorAll(".timeline__item.reveal").forEach(function (item, i) {
+    item.style.setProperty("--d", (i * 0.12).toFixed(2) + "s");
+  });
+
   // スクロールで要素をふわっと表示
-  var items = document.querySelectorAll(".reveal");
+  var items = document.querySelectorAll(".reveal, .timeline");
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (!("IntersectionObserver" in window) || reduce) {
     items.forEach(function (el) { el.classList.add("is-visible"); });
