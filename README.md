@@ -1,68 +1,61 @@
-# Merci — ビションフリーゼ メルシーの公式サイト
+# Merci サイト 公開キット
 
-HTML / CSS / JavaScript だけの静的サイト（ビルド不要）。GitHub Pages で公開。
+元保護犬メルシーの成長日記サイト（PC・スマホ対応）の公開用ファイル一式です。
 
-## ローカルプレビュー
-
-いちばん簡単：`index.html` をブラウザにドラッグ＆ドロップ（ダブルクリック）。
-
-簡易サーバーで開く場合（このフォルダで実行）：
-
-```bash
-python3 -m http.server 8000
-```
-
-ブラウザで http://localhost:8000 を開く。
-※ フォント（Rubik / M PLUS Rounded 1c）は Google Fonts から読み込むため、ネット接続が必要です。
-
-## ファイル構成
+## 中身
 
 ```
-./
-├── index.html        … 全6セクションの1ページ構成
-├── css/style.css     … デザイン（色・フォント・レスポンシブ）
-├── js/main.js        … スクロールでふわっと表示・フッターの年
-├── selection.json    … 素材パックからのコピー（タイトル・日付の元データ）
-├── README.md
-└── assets/           … 素材パックの画像を表示用に軽量化したコピー（22枚）
+index.html        ページ本体
+style.css         デザイン（色・文字・レイアウト）
+main.js           スマホのメニュー、マウスについてくるハート
+assets/
+  hero.jpg        ヒーローの写真
+  profile.jpg     Aboutの丸いアイコン
+  illust-walk.webp  Follow Merciのイラスト
+  photos/         ← ここにインスタの写真を入れる（下を見てね）
 ```
 
-`assets/` は素材の写真を長辺を抑えて再圧縮したもの（約15MB → 約3.8MB）。
-トリミングや加工はしていません。`hero-cathkidston.jpg` は使用していません（素材パックにも未収録）。
+## 公開のしかた（GitHub Pages）
 
-## 各セクションの実装メモ
+1. GitHubで、今のサイト（merci-amour）のリポジトリを開く
+2. このフォルダの中身を全部アップロードして、今のファイルを置き換える
+   （index.html / style.css / main.js / assets フォルダ）
+3. 数分待つと、https://r-studio7.github.io/merci-amour/ に反映される
 
-1. **Hero** — PC（900px〜）は写真左・文字右の2カラムで、顔に文字がかからない。スマホは写真の下に文字。
-   `object-position` で顔を中心に表示。ヒーロー画像だけ遅延読み込みなし（`fetchpriority="high"`）。
-2. **About / Profile** — 丸いプロフィール写真＋プロフィール表（名前・犬種・5歳の女の子・2021年7月3日生まれ・元保護犬／2024年10月に家族に）と成長の物語。ブリーフ記載の事実のみ。
-3. **Album** — 14枚、縦型4:5カード。タイトルと日付は写真の下。顔が切れないよう写真ごとに `object-position` を調整（例：photo-08 は下寄り、photo-18 は上寄り）。
-4. **Movies** — リール8本のサムネイル（4:5）。動画ファイルはないため右上隅に小さな再生マークのみ（顔には重ねない）。
-5. **Story** — 縦の年表4段階（2024.10 家族に迎えた頃 → お散歩で固まっていた頃 → 少しずつ歩けるように → Now）。日付が分かっているのは2024年10月のみなので、他は創作せず Step 表記。
-4.5 **Favorite Places** — メルシーのお気に入りの場所5か所（モニョさん／ナスファームビレッジ／逗子マリーナ／トトのエ／ニコライ バーグマン 箱根 ガーデンズ）。写真があるものは関連する Instagram 投稿にリンク。モニョさん・トトのエは Movies に追加したリールの画像を使用。
-6. **Links** — Instagram / LINEスタンプ / BASE の3ボタン（新しいタブで開く）。
+## 写真の入れかた
 
-### リンク仕様
-Album / Movies の各カードは、selection.json の `instagram_url`（その写真・リールの**個別投稿**）にリンク（新しいタブで開く）。
-※ ブリーフでは「プロフィールに統一」だったが、オーナーの指示で個別投稿リンクに変更。Links セクションの Instagram ボタンはプロフィールのまま。
+`assets/photos/` に、下の名前で写真を入れてください。入れた写真は枠いっぱいに表示されて、マウスを乗せるとふわっと拡大します。
+ファイルがないところは、ピンクの仮の枠のままです。
 
-### デザイン（ストライプ＆フレーム版）
-- 色：Buttermilk #F5F1E8／Blush #E8D8D5／Light Tan #A48A72／Warm Brown #5A4A3A（＋淡いタン #EDE3D7）。**グリーンは使わない**
-- フォント：「Merci」は角ゴシック Outfit（標準幅・Mの山がとがらない）、英字見出しは筆記体 Pinyon Script（About の「Hello, I'm Merci」だけ Cormorant Garamond）、小さな英字ラベルは Cormorant Garamond、日本語は Zen Maru Gothic
-- ストライプ：太いブラッシュ・細いブラッシュ・細いライトタンを、バターミルクの上に並べた縦ストライプ（ヒーロー）。リンク周りは細いピンストライプ
-- フレーム：角が内側にカーブした二重線のフレーム（`assets/frame-cream.svg` を border-image で使用）。写真の角も `.concave` で同じ形に抜いている
-- セクションの背景：Album は Blush、Movies は淡いタン、Places は Blush
-- イラスト：`assets/illust-walk.webp`（背景透過）を Story の最後に「Walking together」として配置
-- 日本語の見出し・カードタイトルは文節単位（`.phrase`）でのみ改行し、2文字だけ次の行に残る改行を防止
+| 場所 | ファイル名 | 比率の目安 |
+| --- | --- | --- |
+| Photo Album 1〜4 | album-1.jpg 〜 album-4.jpg | 縦長 4:5 |
+| Movies 1〜4 | movie-1.jpg 〜 movie-4.jpg（動画の表紙） | 縦長 9:16 |
+| Merci's Favorites 1〜4 | place-1.jpg 〜 place-4.jpg | 正方形 1:1 |
 
-### アニメーション
-- ヒーロー：カードがふわっと登場、写真がゆっくりズーム、「Merci」の文字間が縮まりながら表示
-- スクロール：各要素がふわっと表示。カードは少しずつ順番に、見出しの筆記体は横からすべり込む
-- 年表：点線が上から伸び、項目が左からすべり込み、丸がぽんっと出る
-- イラスト：左から歩いてきて、そのあとゆらゆら
-- ホバー：カードが浮く・再生マークが脈打つ・ボタンが浮く
-- 端末の「視差効果を減らす（動きを減らす）」設定がオンのときは、すべて止まる
+- 写真は横幅1200px前後、1枚300KB以下がおすすめ（表示が軽くなります）
+- 画像から開く先は、今はすべてメルシーのInstagramです。投稿ごとのリンクにしたいときは、index.html の該当する `<a href="https://www.instagram.com/merci_bichon_story/"` を、その投稿のURLに変えてください
 
-### 技術
-- スマホ優先のレスポンシブ（2列 → 3列 → アルバムはPCで4列）
-- 画像はすべて `loading="lazy"`（ヒーロー以外）・`alt` 付き・`width/height` 指定でレイアウトずれ防止
-- `prefers-reduced-motion` 時はアニメーションなし。JSが無効でもすべて表示される
+## 文字を変えたいところ（index.html）
+
+- ヒーローの一言：`元保護犬メルシーの成長日記`
+- About の文章：`<section id="about"` の中
+- お店・スポット名：`［お店・スポット名］` を、実際の名前に（4か所）
+- 写真の名前（ホバーで出る文字）：album の `Photo booth` など
+
+## リンクの設定
+
+- Instagram：https://www.instagram.com/merci_bichon_story/
+- Goods：Etsy の MerciSunDesign
+- **LINE Stickers：まだ仮（`#`）です。** LINEスタンプのURLが決まったら、index.html の `LINE Stickers` のリンク（`href="#"`）に入れてください
+
+## 色と文字
+
+- 色：Buttermilk #f5f1e8 / Blush #e8d8d5 / Light Tan #a48a72 / Warm Brown #5a4a3a / 差し色の赤 #B55447
+- 文字：英語は Cormorant Garamond と Arimo、ロゴは Outfit、日本語は Zen Kaku Gothic New（Google Fonts から読み込み）
+
+## 動き
+
+- ヒーローの写真は、画面の中心から円がふんわり広がって約5秒で全部見えます
+- マウスを動かすと小さなハートがついてきます（スマホでは出ません）
+- 「動きを減らす」設定のスマホやPCでは、動きは自動でオフになります

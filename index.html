@@ -1,512 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Merci | ビションフリーゼ メルシーの公式サイト</title>
-  <meta name="description" content="元保護犬のビションフリーゼ・メルシーの公式サイト。湘南と東京のワンコOKカフェやイベント、犬グッズを発信しています。">
-  <meta name="theme-color" content="#F5F1E8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@500&family=Pinyon+Script&family=Zen+Maru+Gothic:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <script>document.documentElement.classList.add("js");</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Merci | 元保護犬メルシーの成長日記</title>
+<meta name="description" content="元保護犬ビションフリーゼ・メルシーの成長日記。湘南・東京のワンコと行けるお出かけスポットやイベント、LINEスタンプ、グッズを紹介しています。">
+<meta property="og:title" content="Merci | 元保護犬メルシーの成長日記">
+<meta property="og:description" content="元保護犬ビションフリーゼ・メルシーの成長日記">
+<meta property="og:image" content="assets/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@500&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <a class="skip-link" href="#main">本文へスキップ</a>
+<body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8d8d5"></stop><stop offset=".55" stop-color="#d99a90"></stop><stop offset="1" stop-color="#B55447"></stop></linearGradient></defs></svg>
 
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="site-logo" href="#top">Merci</a>
-      <nav class="site-nav" aria-label="メインメニュー">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#album">Album</a></li>
-          <li><a href="#movies">Movies</a></li>
-          <li><a href="#places">Places</a></li>
-          <li><a href="#story">Story</a></li>
-          <li><a href="#links">Links</a></li>
-        </ul>
-      </nav>
-    </div>
+<div class="cream">
+  <a class="banner sans" href="https://www.instagram.com/merci_bichon_story/" target="_blank" rel="noopener">Follow Merci on Instagram · @merci_bichon_story</a>
+
+  <header class="hdr">
+    <a href="#top" class="logo">Merci</a>
+    <button class="menu-btn" aria-label="メニューを開く" aria-expanded="false" aria-controls="gnav"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#5a4a3a" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"></path></svg></button>
+    <nav class="gnav sans" id="gnav">
+      <a href="#about">About</a><a href="#album">Album</a><a href="#movies">Movies</a><a href="#places">Places</a><a href="#story">Story</a><a href="#links">Links</a>
+    </nav>
   </header>
 
-  <main id="main">
-    <!-- 1. Hero -->
-    <section class="hero stripes" id="top" aria-labelledby="hero-title">
-      <div class="hero__card frame">
-      <figure class="hero__media">
-        <img class="concave" src="assets/hero-merci-closeup.jpg" width="1179" height="786"
-             alt="ピンクのリボンをつけて、こちらを見上げるメルシーの顔のアップ"
-             fetchpriority="high" decoding="async">
-      </figure>
-      <div class="hero__text">
-        <p class="eyebrow"><span class="phrase">Bichon Frise</span> / <span class="phrase">Shonan &amp; Tokyo</span></p>
-        <h1 class="hero__title" id="hero-title">Merci</h1>
-        <p class="hero__lead">
-          <span class="phrase">元保護犬の</span><span class="phrase">ビションフリーゼ、</span><span class="phrase">メルシーの毎日。</span><br>
-          <span class="phrase">湘南と東京の</span><span class="phrase">おでかけを</span><span class="phrase">発信しています。</span>
-        </p>
-        <a class="pill-button" href="#album">See Album</a>
-      </div>
-      </div>
-    </section>
+  <section class="hero">
+    <div class="photo" role="img" aria-label="ピンクのリボンをつけたメルシー"></div>
+    <div class="hero-text fade">
+      <p class="sans eyebrow">Bichon Frise · Tokyo &amp; Shonan</p>
+      <h1 class="serif">Hello,<br class="pc-br"> I'm Merci</h1>
+      <p class="jk hero-jp">元保護犬メルシーの成長日記</p>
+      <a href="#album" class="ihb" style="--c:#5a4a3a"><span class="ihb-fill" aria-hidden="true"></span><span class="ihb-a"><span class="ihb-dot" aria-hidden="true"></span>See Album</span><span class="ihb-b" aria-hidden="true">See Album<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+    </div>
+  </section>
 
-    <!-- 2. About / Profile -->
-    <section class="section about" id="about" aria-labelledby="about-title">
-      <div class="container about__grid">
-        <div class="about__profile reveal">
-          <span class="about__photo-frame"><img class="about__photo" src="assets/profile.jpg" width="150" height="150"
-               alt="ピンクの洋服を着て舌をぺろっと出すメルシー" loading="lazy" decoding="async"></span>
-          <dl class="profile-list">
-            <div><dt>Name</dt><dd>メルシー</dd></div>
-            <div><dt>Breed</dt><dd>ビションフリーゼ</dd></div>
-            <div><dt>Age</dt><dd>5歳の女の子</dd></div>
-            <div><dt>Birthday</dt><dd><time datetime="2021-07-03">2021年7月3日</time></dd></div>
-            <div><dt>Family</dt><dd>元保護犬／<time datetime="2024-10">2024年10月</time>に家族に</dd></div>
-          </dl>
-        </div>
-        <div class="about__body reveal">
-          <p class="eyebrow">About</p>
-          <h2 class="section-title section-title--serif" id="about-title">
-            <span class="en">Hello, I'm Merci</span>
-            <span class="ja"><span class="phrase">お散歩が苦手だった子が、</span><span class="phrase">ドッグランを走るまで</span></span>
-          </h2>
-          <p>メルシーは、元保護犬のビションフリーゼ。2021年7月3日生まれ、5歳の女の子です。</p>
-          <p>家族に迎えたばかりの頃は、お散歩に出ても足が止まって固まってしまい、うまく歩けませんでした。少しずつ外の世界に慣れて、今ではドッグランを元気に走れるようになりました。</p>
-          <p>Instagramでは、湘南と東京のワンコOKカフェやイベント、お気に入りの犬グッズを発信しています。</p>
-        </div>
+  <section id="about" class="about">
+    <div class="about-l">
+      <span class="avatar"><img src="assets/profile.jpg" alt="ピンクの洋服を着て舌をぺろっと出すメルシー"></span>
+      <dl class="prof">
+        <dt class="dt">Name</dt><dd class="jk">メルシー</dd>
+        <dt class="dt">Breed</dt><dd class="jk">ビションフリーゼ</dd>
+        <dt class="dt">Age</dt><dd class="jk">5歳の女の子</dd>
+        <dt class="dt">Birthday</dt><dd class="jk">2021年7月3日</dd>
+        <dt class="dt">Family</dt><dd class="jk">2024年10月<br>新しい家族と<wbr>出会う</dd>
+      </dl>
+    </div>
+    <div class="about-r">
+      <p class="serif about-label">About</p>
+      <h2 class="jk about-h">小さな一歩から始まった、<wbr>私の新しい毎日</h2>
+      <p class="jk body">こんにちは、<wbr>メルシーです。<br>私は元保護犬。<wbr>3歳のときに<wbr>新しい家族と<wbr>出会い、<wbr>今は大好きな家族と<wbr>一緒に、<wbr>のんびり<wbr>楽しい毎日を<wbr>過ごしています。</p>
+      <p class="jk body">おうちに迎えられたばかりの頃は、<wbr>お散歩に出ても<wbr>怖くて<wbr>足が止まってしまうことばかり。<wbr>知らない景色や音に<wbr>戸惑いながら、<wbr>少しずつ<wbr>外の世界を<wbr>知っていきました。そんな私も、<wbr>今ではお散歩が<wbr>大好き。<wbr>ドッグランでは<wbr>思いきり<wbr>走れるようになりました。</p>
+      <p class="jk body">このサイトでは、<wbr>湘南や東京の<wbr>ワンコと一緒に<wbr>楽しめるカフェや<wbr>お出かけスポット、<wbr>イベント、<wbr>そして<wbr>お気に入りの<wbr>犬グッズなどを<wbr>紹介しています。小さな発見や、<wbr>心ときめく<wbr>お出かけを、<wbr>私の日常と<wbr>一緒に<wbr>お届けします。どうぞ<wbr>よろしくね♡</p>
+    </div>
+  </section>
+
+  <section id="album" class="sec album">
+    <div class="sec-h"><h2 class="ttl">Photo Album</h2><p class="jk sub">メルシーのアルバム</p></div>
+    <div class="grid4">
+      <figure class="fig"><a class="ph-box" href="https://www.instagram.com/merci_bichon_story/"><span class="zm"></span><svg class="ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#a48a72" stroke-width="1.3" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"></rect><circle cx="12" cy="12.5" r="3.5"></circle><path d="M8 6l1.5-2h5L16 6"></path></svg><img src="assets/photos/album-1.jpg" alt="Photo booth" loading="lazy" onerror="this.remove()"><span class="vl"></span><span class="hv"><b>Photo booth</b><i>View →</i></span></a><figcaption class="cap">Photo booth</figcaption></figure><figure class="fig"><a class="ph-box" href="https://www.instagram.com/merci_bichon_story/"><span class="zm"></span><svg class="ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#a48a72" stroke-width="1.3" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"></rect><circle cx="12" cy="12.5" r="3.5"></circle><path d="M8 6l1.5-2h5L16 6"></path></svg><img src="assets/photos/album-2.jpg" alt="Flower field" loading="lazy" onerror="this.remove()"><span class="vl"></span><span class="hv"><b>Flower field</b><i>View →</i></span></a><figcaption class="cap">Flower field</figcaption></figure><figure class="fig"><a class="ph-box" href="https://www.instagram.com/merci_bichon_story/"><span class="zm"></span><svg class="ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#a48a72" stroke-width="1.3" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"></rect><circle cx="12" cy="12.5" r="3.5"></circle><path d="M8 6l1.5-2h5L16 6"></path></svg><img src="assets/photos/album-3.jpg" alt="Seasonal events" loading="lazy" onerror="this.remove()"><span class="vl"></span><span class="hv"><b>Seasonal events</b><i>View →</i></span></a><figcaption class="cap">Seasonal events</figcaption></figure><figure class="fig"><a class="ph-box" href="https://www.instagram.com/merci_bichon_story/"><span class="zm"></span><svg class="ico" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#a48a72" stroke-width="1.3" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"></rect><circle cx="12" cy="12.5" r="3.5"></circle><path d="M8 6l1.5-2h5L16 6"></path></svg><img src="assets/photos/album-4.jpg" alt="Everyday Merci" loading="lazy" onerror="this.remove()"><span class="vl"></span><span class="hv"><b>Everyday Merci</b><i>View →</i></span></a><figcaption class="cap">Everyday Merci</figcaption></figure>
+    </div>
+    <a href="https://www.instagram.com/merci_bichon_story/" class="sans see-all" target="_blank" rel="noopener">See all on Instagram</a>
+  </section>
+
+  <section id="movies" class="sec movies">
+    <div class="sec-h"><h2 class="ttl">Movies</h2><p class="jk sub">動くメルシー</p><p class="jk scroll-hint">→ 横にスクロール</p></div>
+    <div class="reels">
+      <a href="https://www.instagram.com/merci_bichon_story/" class="reel" aria-label="ムービー1を見る"><span class="zm"></span><span class="play"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#B55447"></path></svg></span><img src="assets/photos/movie-1.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="vl"></span><span class="hv"><b>Merci movie</b><i>Watch →</i></span></a><a href="https://www.instagram.com/merci_bichon_story/" class="reel" aria-label="ムービー2を見る"><span class="zm"></span><span class="play"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#B55447"></path></svg></span><img src="assets/photos/movie-2.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="vl"></span><span class="hv"><b>Merci movie</b><i>Watch →</i></span></a><a href="https://www.instagram.com/merci_bichon_story/" class="reel" aria-label="ムービー3を見る"><span class="zm"></span><span class="play"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#B55447"></path></svg></span><img src="assets/photos/movie-3.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="vl"></span><span class="hv"><b>Merci movie</b><i>Watch →</i></span></a><a href="https://www.instagram.com/merci_bichon_story/" class="reel" aria-label="ムービー4を見る"><span class="zm"></span><span class="play"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#B55447"></path></svg></span><img src="assets/photos/movie-4.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="vl"></span><span class="hv"><b>Merci movie</b><i>Watch →</i></span></a>
+    </div>
+  </section>
+
+  <section id="places" class="gingham">
+    <div class="card">
+      <div class="card-h">
+        <h2 class="ttl">Merci's Favorites</h2>
+        <p class="jk sub">メルシーのお気に入りの場所</p>
+        <p class="jk lead">湘南と東京を中心に、<wbr>ワンコと一緒に行ける<wbr>カフェやお出かけ先を<wbr>紹介しています。</p>
+        <div class="card-btn"><a href="https://www.instagram.com/merci_bichon_story/" class="ihb" target="_blank" rel="noopener"><span class="ihb-fill" aria-hidden="true"></span><span class="ihb-a"><span class="ihb-dot" aria-hidden="true"></span>See Places</span><span class="ihb-b" aria-hidden="true">See Places<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a></div>
       </div>
-    </section>
-
-    <!-- 3. Album -->
-    <section class="section album" id="album" aria-labelledby="album-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <p class="eyebrow">Album</p>
-          <h2 class="section-title" id="album-title">
-            <span class="en">Photo Album</span>
-            <span class="ja"><span class="phrase">メルシーの</span><span class="phrase">アルバム</span></span>
-          </h2>
-        </header>
-        <ul class="card-grid card-grid--album">
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/p/De6jtbrDgCx/" target="_blank" rel="noopener noreferrer" aria-label="ハロウィンのフォトブース（2026.10.25）― Instagramでこの投稿を見る">
-              <div class="card__media concave">
-                <img src="assets/photo-01.jpg" width="900" height="1125" alt="メルシーの写真：ハロウィンのフォトブース" loading="lazy" decoding="async">
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">ハロウィンの</span><span class="phrase">フォトブース</span></p>
-                <p class="card__date"><time datetime="2026-10-25">2026.10.25</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/p/De3JfR5S4Ec/" target="_blank" rel="noopener noreferrer" aria-label="那須ハイランドパークのオフ会（2026.10.23）― Instagramでこの投稿を見る">
-              <div class="card__media concave">
-                <img src="assets/photo-02.jpg" width="900" height="1200" alt="メルシーの写真：那須ハイランドパークのオフ会" loading="lazy" decoding="async">
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">那須ハイランドパークの</span><span class="phrase">オフ会</span></p>
-                <p class="card__date"><time datetime="2026-10-23">2026.10.23</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/p/Dd86Nmjkj0l/" target="_blank" rel="noopener noreferrer" aria-label="ラベンダーのフォトブース・那須（2026.10.01）― Instagramでこの投稿を見る">
-              <div class="card__media concave">
-                <img src="assets/photo-03.jpg" width="900" height="1200" alt="メルシーの写真：ラベンダーのフォトブース・那須" loading="lazy" decoding="async">
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">ラベンダーの</span><span class="phrase">フォトブース・</span><span class="phrase">那須</span></p>
-                <p class="card__date"><time datetime="2026-10-01">2026.10.01</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/p/Db3J6OIksdn/" target="_blank" rel="noopener noreferrer" aria-label="ひまわりと夏祭り・那須（2026.08.10）― Instagramでこの投稿を見る">
-              <div class="card__media concave">
-                <img src="assets/photo-07.jpg" width="900" height="1188" alt="メルシーの写真：ひまわりと夏祭り・那須" loading="lazy" decoding="async" style="object-position: 50% 35%;">
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">ひまわりと夏祭り・</span><span class="phrase">那須</span></p>
-                <p class="card__date"><time datetime="2026-08-10">2026.08.10</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/p/DZ4v9WukkKY/" target="_blank" rel="noopener noreferrer" aria-label="ネモフィラの丘・ひたち海浜公園（2026.06.22）― Instagramでこの投稿を見る">
-              <div class="card__media concave">
-                <img src="assets/photo-08.jpg" width="900" height="1200" alt="メルシーの写真：ネモフィラの丘・ひたち海浜公園" loading="lazy" decoding="async" style="object-position: 50% 80%;">
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">ネモフィラの</span><span class="phrase">丘・</span><span class="phrase">ひたち海浜公園</span></p>
-                <p class="card__date"><time datetime="2026-06-22">2026.06.22</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/p/DXFhAIWEzs-/" target="_blank" rel="noopener noreferrer" aria-label="菜の花畑・ソレイユの丘（2026.04.13）― Instagramでこの投稿を見る">
-              <div class="card__media concave">
-                <img src="assets/photo-09.jpg" width="900" height="1199" alt="メルシーの写真：菜の花畑・ソレイユの丘" loading="lazy" decoding="async" style="object-position: 50% 62%;">
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">菜の</span><span class="phrase">花畑・</span><span class="phrase">ソレイユの</span><span class="phrase">丘</span></p>
-                <p class="card__date"><time datetime="2026-04-13">2026.04.13</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/p/DSpX9W8EvtQ/" target="_blank" rel="noopener noreferrer" aria-label="メリークリスマス（2025.12.24）― Instagramでこの投稿を見る">
-              <div class="card__media concave">
-                <img src="assets/photo-10.jpg" width="900" height="1200" alt="メルシーの写真：メリークリスマス" loading="lazy" decoding="async">
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">メリークリスマス</span></p>
-                <p class="card__date"><time datetime="2025-12-24">2025.12.24</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/p/DSH7VzlEjo8/" target="_blank" rel="noopener noreferrer" aria-label="ビションフェス クリスマスパーティー（2025.12.11）― Instagramでこの投稿を見る">
-              <div class="card__media concave">
-                <img src="assets/photo-11.jpg" width="900" height="1198" alt="メルシーの写真：ビションフェス クリスマスパーティー" loading="lazy" decoding="async">
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">ビションフェス</span> <span class="phrase">クリスマスパーティー</span></p>
-                <p class="card__date"><time datetime="2025-12-11">2025.12.11</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/p/DRriaaZksu_/" target="_blank" rel="noopener noreferrer" aria-label="京都の紅葉さんぽ（2025.11.30）― Instagramでこの投稿を見る">
-              <div class="card__media concave">
-                <img src="assets/photo-13.jpg" width="900" height="1200" alt="メルシーの写真：京都の紅葉さんぽ" loading="lazy" decoding="async">
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">京都の</span><span class="phrase">紅葉さんぽ</span></p>
-                <p class="card__date"><time datetime="2025-11-30">2025.11.30</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/p/DPELaYHEs4c/" target="_blank" rel="noopener noreferrer" aria-label="秋のポートレート（2025.09.26）― Instagramでこの投稿を見る">
-              <div class="card__media concave">
-                <img src="assets/photo-18.jpg" width="900" height="1200" alt="メルシーの写真：秋のポートレート" loading="lazy" decoding="async" style="object-position: 50% 30%;">
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">秋の</span><span class="phrase">ポートレート</span></p>
-                <p class="card__date"><time datetime="2025-09-26">2025.09.26</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/p/DLpKcMcTd-V/" target="_blank" rel="noopener noreferrer" aria-label="お誕生日の記念写真（2025.07.03）― Instagramでこの投稿を見る">
-              <div class="card__media concave">
-                <img src="assets/photo-19.jpg" width="900" height="1125" alt="メルシーの写真：お誕生日の記念写真" loading="lazy" decoding="async">
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">お誕生日の</span><span class="phrase">記念写真</span></p>
-                <p class="card__date"><time datetime="2025-07-03">2025.07.03</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/p/DJmVCEhTr2y/" target="_blank" rel="noopener noreferrer" aria-label="カフェでランチ（2025.05.13）― Instagramでこの投稿を見る">
-              <div class="card__media concave">
-                <img src="assets/photo-21.jpg" width="900" height="1125" alt="メルシーの写真：カフェでランチ" loading="lazy" decoding="async">
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">カフェで</span><span class="phrase">ランチ</span></p>
-                <p class="card__date"><time datetime="2025-05-13">2025.05.13</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/p/DJXKGvEzf8x/" target="_blank" rel="noopener noreferrer" aria-label="ピンクのリンクコーデ・ビションフェス（2025.05.07）― Instagramでこの投稿を見る">
-              <div class="card__media concave">
-                <img src="assets/photo-26.jpg" width="900" height="1125" alt="メルシーの写真：ピンクのリンクコーデ・ビションフェス" loading="lazy" decoding="async">
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">ピンクの</span><span class="phrase">リンクコーデ・</span><span class="phrase">ビションフェス</span></p>
-                <p class="card__date"><time datetime="2025-05-07">2025.05.07</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/p/DIglGFcye8P/" target="_blank" rel="noopener noreferrer" aria-label="チューリップのお庭・箱根（2025.04.16）― Instagramでこの投稿を見る">
-              <div class="card__media concave">
-                <img src="assets/photo-28.jpg" width="900" height="1124" alt="メルシーの写真：チューリップのお庭・箱根" loading="lazy" decoding="async">
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">チューリップの</span><span class="phrase">お庭・</span><span class="phrase">箱根</span></p>
-                <p class="card__date"><time datetime="2025-04-16">2025.04.16</time></p>
-              </div>
-            </a>
-          </li>
-        </ul>
+      <div class="grid4 pgrid">
+        <figure class="fig pfig"><a class="pl-box" href="https://www.instagram.com/merci_bichon_story/"><span class="zm"></span><svg class="ico" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a48a72" stroke-width="1.3" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.3" cy="6.7" r=".8" fill="#a48a72"></circle></svg><img src="assets/photos/place-1.jpg" alt="Kamakura" loading="lazy" onerror="this.remove()"><span class="vl"></span><span class="hv"><b>Kamakura</b><i>View place →</i></span></a><figcaption><span class="sans pa">KAMAKURA</span><span class="jk pn">［お店・スポット名］</span></figcaption></figure><figure class="fig pfig"><a class="pl-box" href="https://www.instagram.com/merci_bichon_story/"><span class="zm"></span><svg class="ico" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a48a72" stroke-width="1.3" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.3" cy="6.7" r=".8" fill="#a48a72"></circle></svg><img src="assets/photos/place-2.jpg" alt="Zushi" loading="lazy" onerror="this.remove()"><span class="vl"></span><span class="hv"><b>Zushi</b><i>View place →</i></span></a><figcaption><span class="sans pa">ZUSHI</span><span class="jk pn">［お店・スポット名］</span></figcaption></figure><figure class="fig pfig"><a class="pl-box" href="https://www.instagram.com/merci_bichon_story/"><span class="zm"></span><svg class="ico" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a48a72" stroke-width="1.3" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.3" cy="6.7" r=".8" fill="#a48a72"></circle></svg><img src="assets/photos/place-3.jpg" alt="Hakone" loading="lazy" onerror="this.remove()"><span class="vl"></span><span class="hv"><b>Hakone</b><i>View place →</i></span></a><figcaption><span class="sans pa">HAKONE</span><span class="jk pn">［お店・スポット名］</span></figcaption></figure><figure class="fig pfig"><a class="pl-box" href="https://www.instagram.com/merci_bichon_story/"><span class="zm"></span><svg class="ico" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a48a72" stroke-width="1.3" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.3" cy="6.7" r=".8" fill="#a48a72"></circle></svg><img src="assets/photos/place-4.jpg" alt="Nasu" loading="lazy" onerror="this.remove()"><span class="vl"></span><span class="hv"><b>Nasu</b><i>View place →</i></span></a><figcaption><span class="sans pa">NASU</span><span class="jk pn">［お店・スポット名］</span></figcaption></figure>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- 4. Movies -->
-    <section class="section movies" id="movies" aria-labelledby="movies-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <p class="eyebrow">Movies</p>
-          <h2 class="section-title" id="movies-title">
-            <span class="en">Reels</span>
-            <span class="ja"><span class="phrase">動いている</span><span class="phrase">メルシー</span></span>
-          </h2>
-        </header>
-        <ul class="card-grid card-grid--movies">
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/reel/DTFjy45gAc2/" target="_blank" rel="noopener noreferrer" aria-label="海を眺める夕暮れ（2026.01.04）― Instagramでこのリールを見る">
-              <div class="card__media concave">
-                <img src="assets/video-31.jpg" width="640" height="1136" alt="メルシーのリール動画のサムネイル：海を眺める夕暮れ" loading="lazy" decoding="async" style="object-position: 50% 72%;">
-                <span class="card__play" aria-hidden="true"></span>
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">海を眺める夕暮れ</span></p>
-                <p class="card__date"><time datetime="2026-01-04">2026.01.04</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/reel/DPtcvkokmOS/" target="_blank" rel="noopener noreferrer" aria-label="鎌倉・モニョさんでランチ（2025.10.11）― Instagramでこのリールを見る">
-              <div class="card__media concave">
-                <img src="assets/reel-monyeo.jpg" width="640" height="1136" alt="メルシーのリール動画のサムネイル：鎌倉・モニョさんでランチ" loading="lazy" decoding="async" style="object-position: 50% 75%;">
-                <span class="card__play" aria-hidden="true"></span>
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">鎌倉・</span><span class="phrase">モニョさんで</span><span class="phrase">ランチ</span></p>
-                <p class="card__date"><time datetime="2025-10-11">2025.10.11</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/reel/DNft5EFzIoA/" target="_blank" rel="noopener noreferrer" aria-label="ドッグランで元気にラン（2025.08.18）― Instagramでこのリールを見る">
-              <div class="card__media concave">
-                <img src="assets/video-42.jpg" width="720" height="1280" alt="メルシーのリール動画のサムネイル：ドッグランで元気にラン" loading="lazy" decoding="async" style="object-position: 50% 68%;">
-                <span class="card__play" aria-hidden="true"></span>
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">ドッグランで</span><span class="phrase">元気にラン</span></p>
-                <p class="card__date"><time datetime="2025-08-18">2025.08.18</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/reel/DNakYaizdS6/" target="_blank" rel="noopener noreferrer" aria-label="ブーケになったメルシー（2025.08.16）― Instagramでこのリールを見る">
-              <div class="card__media concave">
-                <img src="assets/video-43.jpg" width="900" height="1600" alt="メルシーのリール動画のサムネイル：ブーケになったメルシー" loading="lazy" decoding="async" style="object-position: 50% 50%;">
-                <span class="card__play" aria-hidden="true"></span>
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">ブーケになったメルシー</span></p>
-                <p class="card__date"><time datetime="2025-08-16">2025.08.16</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/reel/DNNqB9AT70m/" target="_blank" rel="noopener noreferrer" aria-label="逗子マリーナさんぽ（2025.08.11）― Instagramでこのリールを見る">
-              <div class="card__media concave">
-                <img src="assets/video-46.jpg" width="720" height="1280" alt="メルシーのリール動画のサムネイル：逗子マリーナさんぽ" loading="lazy" decoding="async" style="object-position: 50% 55%;">
-                <span class="card__play" aria-hidden="true"></span>
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">逗子マリーナさんぽ</span></p>
-                <p class="card__date"><time datetime="2025-08-11">2025.08.11</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/reel/DMxh-iLzM0t/" target="_blank" rel="noopener noreferrer" aria-label="ゴールデンアワーのおさんぽ（2025.07.31）― Instagramでこのリールを見る">
-              <div class="card__media concave">
-                <img src="assets/video-48.jpg" width="640" height="1136" alt="メルシーのリール動画のサムネイル：ゴールデンアワーのおさんぽ" loading="lazy" decoding="async" style="object-position: 50% 55%;">
-                <span class="card__play" aria-hidden="true"></span>
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">ゴールデンアワーの</span><span class="phrase">おさんぽ</span></p>
-                <p class="card__date"><time datetime="2025-07-31">2025.07.31</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/reel/DLM9bgnzPUs/" target="_blank" rel="noopener noreferrer" aria-label="鎌倉の紫陽花さんぽ（2025.06.22）― Instagramでこのリールを見る">
-              <div class="card__media concave">
-                <img src="assets/video-54.jpg" width="900" height="1600" alt="メルシーのリール動画のサムネイル：鎌倉の紫陽花さんぽ" loading="lazy" decoding="async" style="object-position: 50% 92%;">
-                <span class="card__play" aria-hidden="true"></span>
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">鎌倉の</span><span class="phrase">紫陽花さんぽ</span></p>
-                <p class="card__date"><time datetime="2025-06-22">2025.06.22</time></p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link" href="https://www.instagram.com/reel/DKR_KWiTz9P/" target="_blank" rel="noopener noreferrer" aria-label="鎌倉トトのエで薬膳ランチ（2025.06.01）― Instagramでこのリールを見る">
-              <div class="card__media concave">
-                <img src="assets/reel-totonoe.jpg" width="640" height="1136" alt="メルシーのリール動画のサムネイル：鎌倉トトのエで薬膳ランチ" loading="lazy" decoding="async" style="object-position: 50% 12%;">
-                <span class="card__play" aria-hidden="true"></span>
-              </div>
-              <div class="card__body">
-                <p class="card__title"><span class="phrase">鎌倉トトのエで</span><span class="phrase">薬膳ランチ</span></p>
-                <p class="card__date"><time datetime="2025-06-01">2025.06.01</time></p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+  <section id="story" class="sec story">
+    <div class="sec-h"><h2 class="ttl">Merci's Story</h2><p class="jk sub">少しずつ、一歩ずつ</p></div>
+    <ol class="steps">
+      <li class="step"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#a48a72" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 54V28l20-16 20 16v26z"></path><path d="M32 44c-3-4-10-3-9 3 1 4 9 8 9 8s8-4 9-8c1-6-6-7-9-3z"></path></svg><span class="serif num">01</span><p class="sans sub">2024.10</p><p class="jk txt">家族に迎えた日</p></li><li class="arr" aria-hidden="true"><svg viewBox="0 0 64 14" width="64" height="14" fill="none" stroke="#B55447" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h58" stroke-dasharray="2 5"></path><path d="M54 2l6 5-6 5"></path></svg></li>
+      <li class="step"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#a48a72" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="32" cy="40" rx="10" ry="8"></ellipse><circle cx="20" cy="26" r="4"></circle><circle cx="28" cy="20" r="4"></circle><circle cx="36" cy="20" r="4"></circle><circle cx="44" cy="26" r="4"></circle></svg><span class="serif num">02</span><p class="sans sub">FIRST WALKS</p><p class="jk txt">お散歩で<wbr>固まっていた頃</p></li><li class="arr" aria-hidden="true"><svg viewBox="0 0 64 14" width="64" height="14" fill="none" stroke="#B55447" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h58" stroke-dasharray="2 5"></path><path d="M54 2l6 5-6 5"></path></svg></li>
+      <li class="step"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#a48a72" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="20" cy="44" rx="6" ry="5"></ellipse><circle cx="14" cy="35" r="2.4"></circle><circle cx="20" cy="33" r="2.4"></circle><circle cx="26" cy="35" r="2.4"></circle><ellipse cx="42" cy="26" rx="6" ry="5"></ellipse><circle cx="36" cy="17" r="2.4"></circle><circle cx="42" cy="15" r="2.4"></circle><circle cx="48" cy="17" r="2.4"></circle></svg><span class="serif num">03</span><p class="sans sub">STEP BY STEP</p><p class="jk txt">少しずつ<wbr>歩けるように</p></li><li class="arr" aria-hidden="true"><svg viewBox="0 0 64 14" width="64" height="14" fill="none" stroke="#B55447" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h58" stroke-dasharray="2 5"></path><path d="M54 2l6 5-6 5"></path></svg></li>
+      <li class="step"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#a48a72" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 46c10-2 16-8 22-8s12 6 22 8"></path><path d="M32 12v8M18 18l5 6M46 18l-5 6"></path><circle cx="32" cy="30" r="5"></circle></svg><span class="serif num">04</span><p class="sans sub">NOW</p><p class="jk txt">ドッグランを<wbr>走る今</p></li>
+    </ol>
+  </section>
 
-    <!-- 4.5 Favorite Places -->
-    <section class="section places" id="places" aria-labelledby="places-title">
-      <div class="container">
-        <header class="section-head reveal">
-          <p class="eyebrow">Favorite Places</p>
-          <h2 class="section-title" id="places-title">
-            <span class="en">Merci's Favorites</span>
-            <span class="ja"><span class="phrase">メルシーの</span><span class="phrase">お気に入りの場所</span></span>
-          </h2>
-        </header>
-        <ul class="card-grid card-grid--places">
-          <li class="card reveal">
-            <a class="card__link place" href="https://www.instagram.com/reel/DPtcvkokmOS/" target="_blank" rel="noopener noreferrer" aria-label="モニョさん ― Instagramでこのリールを見る">
-              <div class="card__media place__media concave">
-                <img src="assets/reel-monyeo.jpg" width="640" height="1136" alt="モニョさんの店内で、ピンクのクッションのいすに座って笑うメルシー" loading="lazy" decoding="async" style="object-position: 50% 75%;">
-              </div>
-              <div class="card__body">
-                <p class="card__title place__name">モニョさん</p>
-                <p class="place__area">鎌倉</p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link place" href="https://www.instagram.com/p/Db3J6OIksdn/" target="_blank" rel="noopener noreferrer" aria-label="ナスファームビレッジ ― Instagramでこの投稿を見る">
-              <div class="card__media place__media concave">
-                <img src="assets/photo-07.jpg" width="900" height="1188" alt="ナスファームビレッジでドリンクと一緒に写るメルシー" loading="lazy" decoding="async" style="object-position: 50% 35%;">
-              </div>
-              <div class="card__body">
-                <p class="card__title place__name">ナスファームビレッジ</p>
-                <p class="place__area">那須</p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link place" href="https://www.instagram.com/reel/DNNqB9AT70m/" target="_blank" rel="noopener noreferrer" aria-label="逗子マリーナ ― Instagramでこの投稿を見る">
-              <div class="card__media place__media concave">
-                <img src="assets/video-46.jpg" width="720" height="1280" alt="逗子マリーナのヤシの木の道を歩くメルシー" loading="lazy" decoding="async" style="object-position: 50% 58%;">
-              </div>
-              <div class="card__body">
-                <p class="card__title place__name">逗子マリーナ</p>
-                <p class="place__area">逗子</p>
-              </div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link place" href="https://www.instagram.com/reel/DKR_KWiTz9P/" target="_blank" rel="noopener noreferrer" aria-label="トトのエ ― Instagramでこのリールを見る">
-              <div class="card__media place__media concave">
-                <img src="assets/reel-totonoe.jpg" width="640" height="1136" alt="トトのエで、薬膳のお料理が並ぶテーブルの前に座るメルシー" loading="lazy" decoding="async" style="object-position: 50% 12%;">
-              </div>
-              <div class="card__body">
-                <p class="card__title place__name">トトのエ</p>
-                <p class="place__area">鎌倉</p></div>
-            </a>
-          </li>
-          <li class="card reveal">
-            <a class="card__link place" href="https://www.instagram.com/p/DIglGFcye8P/" target="_blank" rel="noopener noreferrer" aria-label="ニコライ バーグマン 箱根 ガーデンズ ― Instagramでこの投稿を見る">
-              <div class="card__media place__media concave">
-                <img src="assets/photo-28.jpg" width="900" height="1124" alt="ニコライ バーグマン 箱根 ガーデンズのベンチに座るメルシー" loading="lazy" decoding="async" style="object-position: 50% 60%;">
-              </div>
-              <div class="card__body">
-                <p class="card__title place__name">ニコライ バーグマン 箱根 ガーデンズ</p>
-                <p class="place__area">箱根</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+  <section id="links" class="follow">
+    <h2 class="ttl">Follow Merci</h2>
+    <p class="jk f-lead">メルシーに会いに来てね</p>
+    <p class="jk f-body">お出かけやイベントの様子は<wbr>Instagramで<wbr>発信しています。<br>LINEスタンプや<wbr>グッズも<wbr>あるよ♡</p>
+    <div class="fcs">
+      <a href="https://www.instagram.com/merci_bichon_story/" class="fc" target="_blank" rel="noopener"><span class="fc-c"><svg class="fci" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.3" cy="6.7" r=".8" fill="currentColor"></circle></svg></span><span class="fc-n">Instagram</span><span class="fc-s">Outings &amp; events</span></a>
+      <a href="#" class="fc"><span class="fc-c"><svg class="fci" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11c0-3.9 3.6-7 8-7s8 3.1 8 7-3.6 7-8 7c-.8 0-1.5-.1-2.2-.3L6 20l.6-3.2C5 15.6 4 13.4 4 11z"></path></svg></span><span class="fc-n">LINE Stickers</span><span class="fc-s">Merci stickers</span></a>
+      <a href="https://www.etsy.com/jp/shop/MerciSunDesign" class="fc" target="_blank" rel="noopener"><span class="fc-c"><svg class="fci" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6z"></path><path d="M9 8V6.5a3 3 0 016 0V8"></path></svg></span><span class="fc-n">Goods</span><span class="fc-s">Dog art &amp; tees</span></a>
+    </div>
+    <img class="walk" src="assets/illust-walk.webp" alt="メルシーとお散歩するイラスト" loading="lazy">
+  </section>
+</div>
 
-    <!-- 5. Story -->
-    <section class="section story" id="story" aria-labelledby="story-title">
-      <div class="container container--narrow">
-        <header class="section-head reveal">
-          <p class="eyebrow">Story</p>
-          <h2 class="section-title" id="story-title">
-            <span class="en">Merci's Story</span>
-            <span class="ja"><span class="phrase">少しずつ、</span><span class="phrase">一歩ずつ</span></span>
-          </h2>
-        </header>
-        <ol class="timeline">
-          <li class="timeline__item reveal">
-            <p class="timeline__when"><time datetime="2024-10">2024.10</time></p>
-            <h3 class="timeline__title"><span class="phrase">家族に</span><span class="phrase">迎えた頃</span></h3>
-            <p>元保護犬のメルシーが、わが家の一員になりました。</p>
-          </li>
-          <li class="timeline__item reveal">
-            <p class="timeline__when">Step 2</p>
-            <h3 class="timeline__title"><span class="phrase">お散歩で</span><span class="phrase">固まって</span><span class="phrase">しまっていた頃</span></h3>
-            <p>お外に出ると足が止まって、うまく歩けないことがありました。</p>
-          </li>
-          <li class="timeline__item reveal">
-            <p class="timeline__when">Step 3</p>
-            <h3 class="timeline__title"><span class="phrase">少しずつ</span><span class="phrase">歩けるように</span></h3>
-            <p>外の世界に少しずつ慣れて、自分の足で歩けるようになっていきました。</p>
-          </li>
-          <li class="timeline__item timeline__item--now reveal">
-            <p class="timeline__when">Now</p>
-            <h3 class="timeline__title"><span class="phrase">ドッグランを</span><span class="phrase">元気に走る</span><span class="phrase">今</span></h3>
-            <p>ドッグランを元気に走り、カフェやイベントへのお出かけを楽しんでいます。</p>
-          </li>
-        </ol>
-        <figure class="story__illust reveal">
-          <img src="assets/illust-walk.webp" width="1100" height="829"
-               alt="ボーダーのシャツの女性とメルシーが、エッフェル塔とピンクの木のそばをお散歩しているイラスト"
-               loading="lazy" decoding="async">
-          <figcaption>Walking together</figcaption>
-        </figure>
-      </div>
-    </section>
+<footer class="ftr">
+  <div class="badge"><span class="logo">Merci</span><span class="sans">TOKYO · SHONAN</span></div>
+  <nav class="sans fnav"><a href="#about">About</a><a href="#album">Album</a><a href="#movies">Movies</a><a href="#places">Places</a><a href="#story">Story</a><a href="#links">Links</a></nav>
+  <div class="see"><p class="ttl">See you soon</p><p class="jk">お出かけやイベントの様子は<wbr>Instagramで<wbr>更新中。</p></div>
+  <p class="sans copy">© 2026 Merci — merci_bichon_story</p>
+</footer>
 
-    <!-- 6. Links -->
-    <section class="section links pinstripe" id="links" aria-labelledby="links-title">
-      <div class="container container--narrow links__box frame">
-        <header class="section-head reveal">
-          <p class="eyebrow">Links</p>
-          <h2 class="section-title" id="links-title">
-            <span class="en">Follow Merci</span>
-            <span class="ja"><span class="phrase">メルシーに</span><span class="phrase">会いに来てね</span></span>
-          </h2>
-        </header>
-        <ul class="link-list reveal">
-          <li>
-            <a class="link-button" href="https://www.instagram.com/merci_bichon_story" target="_blank" rel="noopener noreferrer">
-              <span class="link-button__en">Instagram</span>
-              <span class="link-button__ja">@merci_bichon_story</span>
-            </a>
-          </li>
-          <li>
-            <a class="link-button" href="https://store.line.me/stickershop/author/5338966/" target="_blank" rel="noopener noreferrer">
-              <span class="link-button__en">LINE Stickers</span>
-              <span class="link-button__ja">メルシーLINEスタンプ</span>
-            </a>
-          </li>
-          <li>
-            <a class="link-button" href="https://mercisun.base.shop/" target="_blank" rel="noopener noreferrer">
-              <span class="link-button__en">Merci Goods</span>
-              <span class="link-button__ja">メルシーグッズ（BASE）</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; <span id="year">2026</span> Merci &mdash; merci_bichon_story</p>
-  </footer>
-
-  <script src="js/main.js" defer></script>
+<div id="hearts" aria-hidden="true"></div>
+<script src="main.js"></script>
 </body>
 </html>
