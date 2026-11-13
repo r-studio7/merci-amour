@@ -86,7 +86,7 @@ img{max-width:100%;display:block}
 .play{width:56px;height:56px;border-radius:999px;background:#f5f1e8;display:flex;align-items:center;justify-content:center;z-index:2}
 .vl{position:absolute;inset:0;z-index:3;background:rgba(255,255,255,.6);opacity:0;transition:opacity .6s ease}
 .hv{position:absolute;inset:0;z-index:4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:0 16px;text-align:center;opacity:0;transform:translateY(8px);transition:opacity .6s ease,transform .6s ease}
-.hv b{font-family:"Cormorant Garamond","Zen Kaku Gothic New",serif;font-weight:500;font-size:20px;line-height:1.5;letter-spacing:.04em}
+.hv b{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:500;font-size:15px;line-height:1.6;letter-spacing:.06em}
 .hv i{font-style:normal;font-family:Arimo,sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
 .ph-box:hover .zm,.pl-box:hover .zm,.reel:hover .zm,.ph-box:hover img,.pl-box:hover img,.reel:hover img{transform:scale(1.1)}
 .ph-box:hover .vl,.pl-box:hover .vl,.reel:hover .vl,.ph-box:hover .hv,.pl-box:hover .hv,.reel:hover .hv{opacity:1}
@@ -194,12 +194,13 @@ img{max-width:100%;display:block}
   .grid4{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
   .fig{gap:10px}
   .cap{font-size:12px}
-  .hv b{font-size:16px}
+  .hv b{font-size:13px}
 
   .movies{padding:48px 0 96px 20px;align-items:stretch}
   .scroll-hint{display:block;margin:0;font-size:14px}
   .reels{display:flex;width:auto;gap:14px;overflow-x:auto;padding-right:20px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
-  .reel{flex:0 0 200px;aspect-ratio:auto;height:356px;scroll-snap-align:start}
+  .reelfig{flex:0 0 200px;scroll-snap-align:start}
+  .reel{aspect-ratio:auto;height:356px}
 
   #places{padding:40px 16px}
   .card{width:auto;padding:40px 20px;gap:32px}
